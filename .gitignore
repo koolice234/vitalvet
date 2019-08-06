@@ -62,4 +62,3 @@ content/uploads/mailpoet/
 !content/uploads/
 !import/*.sql
 vendor/
-wp-config.php

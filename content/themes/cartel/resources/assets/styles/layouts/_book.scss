@@ -1,0 +1,86 @@
+#services {
+  padding: 70px 0 55px;
+  background: #0e0216;
+
+  .title {
+    h2 {
+      position: relative;
+      font-size: 18px;
+      z-index: 1;
+      padding: 0;
+      color: #fff;
+      text-indent: 5px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      &::before {
+        content: "01";
+        padding: 30px 35px 125px;
+        background: #a239ca;
+        border-radius: 90px;
+        position: relative;
+        z-index: -1;
+        text-indent: 0;
+        font-weight: 800;
+        font-size: 90px;
+        color: #fff;
+        font-family: $base-font;
+      }
+    }
+
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      margin: 0 30px;
+      width: 360px;
+
+      p {
+        line-height: 40px;
+        font-size: 40px;
+        padding: 0;
+        color: #fff;
+        font-weight: 800;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+
+  .service-cont {
+    padding-top: 70px;
+
+    .service-title {
+      color: #fff;
+      text-align: center;
+      font-weight: 800;
+
+      h3 {
+        font-family: "Poppins", sans-serif;
+        padding: 20px 0;
+        font-size: 16px;
+      }
+    }
+
+    .service-desc {
+      p {
+        color: #aaa;
+        text-align: center;
+        line-height: 25px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .img-cont {
+      margin: 0 auto 30px;
+      width: 280px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 50px 0 35px;
+
+    .img-cont {
+      width: 230px;
+    }
+  }
+}

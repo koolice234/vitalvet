@@ -1,0 +1,80 @@
+#team {
+  padding: 70px 0 1000px;
+  background: $bg1;
+
+  .title {
+    text-align: right;
+
+    h2 {
+      position: relative;
+      font-size: 18px;
+      z-index: 1;
+      padding: 0;
+      color: #fff;
+      text-indent: 5px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      &::after {
+        content: "02";
+        padding: 45px 35px 125px;
+        background: #a239ca;
+        border-radius: 90px;
+        position: relative;
+        z-index: -1;
+        text-indent: 0;
+        font-weight: 800;
+        font-size: 90px;
+        color: #fff;
+        font-family: $base-font;
+      }
+    }
+
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      margin: 0 80px;
+      width: 360px;
+      float: right;
+
+      p {
+        line-height: 40px;
+        font-size: 40px;
+        padding: 0;
+        color: #fff;
+        font-weight: 800;
+        width: 400px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+
+  .team-cont {
+    float: right;
+    padding-top: 90px;
+    color: #fff;
+    text-align: center;
+
+    .team-name {
+      padding-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .img-cont {
+      width: 280px;
+    }
+
+    .text-cont {
+      width: auto;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 50px 0 35px;
+
+    .img-cont {
+      width: 190px;
+    }
+  }
+}
