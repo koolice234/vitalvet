@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'cartel');
+define('DB_NAME', 'vitalvet_db');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -82,7 +82,7 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 // Custom Content Directory
-$base_url = 'http://cartel.local';
+$base_url = 'http://vitalvet.local';
 
 define( 'WP_SITEURL', $base_url . '/core' );
 define( 'WP_HOME',    $base_url );
